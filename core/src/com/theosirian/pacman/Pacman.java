@@ -11,7 +11,7 @@ import com.badlogic.gdx.math.Vector2;
 
 import java.util.Objects;
 
-public class PacmanActor {
+public class Pacman {
 
     private Animation anim;
     private TextureRegion currentFrame;
@@ -31,7 +31,9 @@ public class PacmanActor {
     private TiledMapTileLayer collisionLayer;
     private Vector2 position, targetPosition, size, origin, scale;
 
-    public PacmanActor(int x, int y, TiledMapTileLayer collisionLayer) {
+    private int score;
+
+    public Pacman(int x, int y, TiledMapTileLayer collisionLayer) {
         Texture texture = new Texture(Gdx.files.internal("pacman.png"));
         TextureRegion[] regions = new TextureRegion[3];
         for (int i = 0; i < 3; i++) {
@@ -45,12 +47,13 @@ public class PacmanActor {
         origin = new Vector2(8, 8);
         scale = new Vector2(1, 1);
         setRotation(0);
-        setBounds(getX(), getY(), 16, 16);
+        setBounds(getX() + 5, getY() + 5, 6, 6);
         speed = 2;
         direction = Direction.NONE;
         previousDirection = Direction.NONE;
         movementPrediction = Direction.NONE;
         movementPredictionCounter = 0;
+        score = 0;
     }
 
     public void update(float delta) {
@@ -82,7 +85,7 @@ public class PacmanActor {
                 wantToMove.set(position.cpy().mulAdd(getDirectionVector(direction), speed));
                 if (canMoveTo(collisionLayer, wantToMove)) {
                     if (getX() != wantToMove.x || getY() != wantToMove.y) {
-                        System.out.printf("{%d, %d}->{%.2f, %.2f}\n", getX(), getY(), wantToMove.x, wantToMove.y);
+                        //System.out.printf("{%d, %d}->{%.2f, %.2f}\n", getX(), getY(), wantToMove.x, wantToMove.y);
                     }
                     setDirection(direction);
                     targetPosition.set(wantToMove);
@@ -100,11 +103,28 @@ public class PacmanActor {
             }
         }
         setRotation(dirToDeg(direction));
-        setBounds(getX(), getY(), getWidth(), getHeight());
+        setBounds(getX() + 5, getY() + 5, 6, 6);
     }
 
     public void draw(Batch batch) {
         batch.draw(currentFrame, position.x, position.y, origin.x, origin.y, size.x, size.y, scale.x, scale.y, rotation);
+    }
+
+    public static Direction stringToDirection(String str) {
+        str = str.trim().toLowerCase();
+        switch (str) {
+            case "up":
+                return Direction.UP;
+            case "down":
+                return Direction.DOWN;
+            case "right":
+                return Direction.RIGHT;
+            case "left":
+                return Direction.LEFT;
+            case "none":
+            default:
+                return Direction.NONE;
+        }
     }
 
     private static float dirToDeg(Direction dir) {
@@ -156,11 +176,33 @@ public class PacmanActor {
         return false;
     }
 
+    public Pacman teleport(int x, int y) {
+        setX(x);
+        setY(y);
+        setTargetX(x);
+        setTargetY(y);
+        setBounds(getX() + 5, getY() + 5, 6, 6);
+        return this;
+    }
+
+    public Pacman stopMoving() {
+        direction = Direction.NONE;
+        previousDirection = Direction.NONE;
+        movementPrediction = Direction.NONE;
+        movementPredictionCounter = 0;
+        return this;
+    }
+
+    public Pacman setCollisionLayer(TiledMapTileLayer collisionLayer) {
+        this.collisionLayer = collisionLayer;
+        return this;
+    }
+
     public Direction getDirection() {
         return direction;
     }
 
-    public PacmanActor setDirection(Direction dir) {
+    public Pacman setDirection(Direction dir) {
         this.previousDirection = this.direction;
         this.direction = dir;
         return this;
@@ -170,7 +212,7 @@ public class PacmanActor {
         return rotation;
     }
 
-    public PacmanActor setRotation(float rotation) {
+    public Pacman setRotation(float rotation) {
         this.rotation = rotation;
         return this;
     }
@@ -179,7 +221,7 @@ public class PacmanActor {
         return (int) position.x;
     }
 
-    public PacmanActor setX(int x) {
+    public Pacman setX(int x) {
         this.position.x = x;
         return this;
     }
@@ -188,7 +230,7 @@ public class PacmanActor {
         return (int) position.y;
     }
 
-    public PacmanActor setY(int y) {
+    public Pacman setY(int y) {
         this.position.y = y;
         return this;
     }
@@ -197,7 +239,7 @@ public class PacmanActor {
         return (int) size.x;
     }
 
-    public PacmanActor setWidth(int width) {
+    public Pacman setWidth(int width) {
         this.size.x = width;
         return this;
     }
@@ -206,7 +248,7 @@ public class PacmanActor {
         return (int) size.y;
     }
 
-    public PacmanActor setHeight(int height) {
+    public Pacman setHeight(int height) {
         this.size.y = height;
         return this;
     }
@@ -215,7 +257,7 @@ public class PacmanActor {
         return origin.x;
     }
 
-    public PacmanActor setOriginX(float originX) {
+    public Pacman setOriginX(float originX) {
         this.origin.x = originX;
         return this;
     }
@@ -224,7 +266,7 @@ public class PacmanActor {
         return origin.y;
     }
 
-    public PacmanActor setOriginY(float originY) {
+    public Pacman setOriginY(float originY) {
         this.origin.y = originY;
         return this;
     }
@@ -233,7 +275,7 @@ public class PacmanActor {
         return scale.x;
     }
 
-    public PacmanActor setScaleX(float scaleX) {
+    public Pacman setScaleX(float scaleX) {
         this.scale.x = scaleX;
         return this;
     }
@@ -242,7 +284,7 @@ public class PacmanActor {
         return scale.y;
     }
 
-    public PacmanActor setScaleY(float scaleY) {
+    public Pacman setScaleY(float scaleY) {
         this.scale.y = scaleY;
         return this;
     }
@@ -251,12 +293,12 @@ public class PacmanActor {
         return bounds;
     }
 
-    public PacmanActor setBounds(Rectangle bounds) {
+    public Pacman setBounds(Rectangle bounds) {
         this.bounds = bounds;
         return this;
     }
 
-    public PacmanActor setBounds(float x, float y, float width, float height) {
+    public Pacman setBounds(float x, float y, float width, float height) {
         if (bounds != null) {
             bounds.setX(x);
             bounds.setY(y);
@@ -272,7 +314,7 @@ public class PacmanActor {
         return (int) targetPosition.y;
     }
 
-    public PacmanActor setTargetY(int targetY) {
+    public Pacman setTargetY(int targetY) {
         this.targetPosition.y = targetY;
         return this;
     }
@@ -281,9 +323,17 @@ public class PacmanActor {
         return (int) targetPosition.x;
     }
 
-    public PacmanActor setTargetX(int targetX) {
+    public Pacman setTargetX(int targetX) {
         this.targetPosition.x = targetX;
         return this;
+    }
+
+    public void changeScore(int i) {
+        this.score += i;
+    }
+
+    public int getScore() {
+        return this.score;
     }
 
 }

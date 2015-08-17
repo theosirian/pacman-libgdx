@@ -1,0 +1,1159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-up" width="19" height="21" tilewidth="16" tileheight="16"
+     nextobjectid="38">
+    <tileset firstgid="1" name="PacMapTileset" tilewidth="16" tileheight="16">
+        <image source="pacman-tileset.png" width="768" height="768"/>
+        <terraintypes>
+            <terrain name="Blue" tile="49"/>
+        </terraintypes>
+        <tile id="0" terrain=",,,0">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+            <animation>
+                <frame tileid="0" duration="100"/>
+                <frame tileid="8" duration="100"/>
+            </animation>
+        </tile>
+        <tile id="1" terrain=",,0,0">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="2" terrain=",,0,">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="3" terrain="0,0,0,">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="4">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="5" terrain="0,0,,0">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="6">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+        </tile>
+        <tile id="7">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+        </tile>
+        <tile id="12">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="13">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="14">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="15">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="16">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="17">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="24">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="25">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="26">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="27">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="28">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="29">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="36">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="37">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="38">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="39">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="40">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="41">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="48" terrain=",0,,0">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="49" terrain="0,0,0,0">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="50" terrain="0,,0,">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="51">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="52">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="53">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="54">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+        </tile>
+        <tile id="55">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+        </tile>
+        <tile id="60">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="61">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="62">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="63">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="64">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="65">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="72">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="73">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="74">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="75">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="76">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="77">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="84">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="85">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="86">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="87">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="88">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="89">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="96" terrain=",0,,">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="97" terrain="0,0,,">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="98" terrain="0,,,">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="99" terrain="0,,0,0">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="100">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="101" terrain=",0,0,0">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="102">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+        </tile>
+        <tile id="103">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+        </tile>
+        <tile id="108">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="109">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="110">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="111">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="112">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="113">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="120">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="121">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="122">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="123">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="124">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="125">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="132">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="133">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="134">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="135">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="136">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="137">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="144" terrain="0,,,0">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="145">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="146">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="147" terrain=",0,0,">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="148">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="149">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="150">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+        </tile>
+        <tile id="151">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+        </tile>
+        <tile id="156">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="157">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="158">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="159">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="160">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="161">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="168">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="169">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="170">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="171">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="172">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="173">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="180">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="181">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="182">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="183">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="184">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="185">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="192">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="193">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="194">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="195">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="196">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="197">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="198">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+        </tile>
+        <tile id="199">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+        </tile>
+        <tile id="204">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="205">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="206">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="207">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="208">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="209">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="216">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="217">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="218">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="219">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="220">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="221">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="228">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="229">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="230">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="231">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="232">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="233">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="240">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="241">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="242">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="243">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="244">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="245">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="246">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+        </tile>
+        <tile id="247">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+        </tile>
+        <tile id="252">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="253">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="254">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="255">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="256">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="257">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="264">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="265">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="266">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="267">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="268">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="269">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="276">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="277">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="278">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="279">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="280">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="281">
+            <objectgroup draworder="index">
+                <object id="0" x="0" y="0" width="16" height="16"/>
+            </objectgroup>
+        </tile>
+        <tile id="288">
+            <properties>
+                <property name="block" value="0"/>
+            </properties>
+        </tile>
+        <tile id="289">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+        </tile>
+        <tile id="290">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+        </tile>
+        <tile id="291">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+        </tile>
+        <tile id="292">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+        </tile>
+        <tile id="293">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+        </tile>
+        <tile id="294">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+        </tile>
+        <tile id="295">
+            <properties>
+                <property name="block" value="1"/>
+            </properties>
+        </tile>
+        <tile id="336">
+            <properties>
+                <property name="type" value="smallDot"/>
+            </properties>
+        </tile>
+        <tile id="337">
+            <properties>
+                <property name="type" value="bigDot"/>
+            </properties>
+        </tile>
+        <tile id="338">
+            <properties>
+                <property name="type" value="fruitSpawn"/>
+            </properties>
+        </tile>
+        <tile id="339">
+            <properties>
+                <property name="type" value="ghostSpawn"/>
+            </properties>
+        </tile>
+        <tile id="340">
+            <properties>
+                <property name="type" value="playerSpawn"/>
+            </properties>
+        </tile>
+        <tile id="341">
+            <properties>
+                <property name="type" value="teleport"/>
+            </properties>
+        </tile>
+    </tileset>
+    <layer name="Map" width="19" height="21">
+        <data encoding="base64" compression="zlib">
+            eJy1lOsNwzAIhMkomaRdNE4XctSFnJcU1Cs9CG2VHwgrvpjPHHIRkSWIxxZ9J1ISunpovdD9jE4185alezHousl7noEV/6kOV5Y14tK7P8238cjKMIH2jOtbzojLcjSHM8P1a7/Y3ZUD/UT/LCf2OFv/jLcQrkE+/cLaA+Hy5v7f+cJatr7NE7kDnhXxZTUVauHcYH8aaHB/BI2dr8x8e33b1zcyV8wn5jPO2f0iH/EtYj4xnzPvV+RlpLPe2FCGjG4FHoK3EA==
+        </data>
+    </layer>
+    <layer name="Objects" width="19" height="21">
+        <properties>
+            <property name="teleport" value="9,0/9,20;9,20/9,0;"/>
+        </properties>
+        <data encoding="base64" compression="zlib">
+            eJy1lF0OgDAIg+WIzp/7H8Us0QcbaIuJJIsGy/jmgGXRdoYhum2NenV1I9767J19w3jMoRgqLsxf+RwtY3A4FVfHGJcbr2Iy/27+T6xD1Mx9nsV0WT13zlj52dm3Iie7x+59ZnGslrNnpVE8DjP2JqvvQ/TDiHxvxaF0f82JL/PLnROMv9vD09x5fwHLSzSz
+        </data>
+    </layer>
+    <objectgroup name="Teleports">
+        <object id="34" x="0" y="144" width="16" height="16">
+            <properties>
+                <property name="outDirection" value="left"/>
+                <property name="targetX" value="18"/>
+                <property name="targetY" value="11"/>
+            </properties>
+        </object>
+        <object id="35" x="144" y="0" width="16" height="16">
+            <properties>
+                <property name="outDirection" value="up"/>
+                <property name="targetX" value="9"/>
+                <property name="targetY" value="0"/>
+            </properties>
+        </object>
+        <object id="36" x="288" y="144" width="16" height="16">
+            <properties>
+                <property name="outDirection" value="right"/>
+                <property name="targetX" value="0"/>
+                <property name="targetY" value="11"/>
+            </properties>
+        </object>
+        <object id="37" x="144" y="320" width="16" height="16">
+            <properties>
+                <property name="outDirection" value="down"/>
+                <property name="targetX" value="9"/>
+                <property name="targetY" value="20"/>
+            </properties>
+        </object>
+    </objectgroup>
+</map>
