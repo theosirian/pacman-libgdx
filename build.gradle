@@ -11,9 +11,9 @@ allprojects {
     apply plugin: "eclipse"
     apply plugin: "idea"
 
-    version = '0.1'
+    version = '0.2'
     ext {
-        appName = 'pacman'
+        appName = 'Pacman'
         gdxVersion = '1.6.4'
         roboVMVersion = '1.5.0'
         box2DLightsVersion = '1.4'
