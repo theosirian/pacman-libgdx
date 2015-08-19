@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-up" width="19" height="21" tilewidth="16" tileheight="16"
-     nextobjectid="38">
+<map version="1.0" orientation="orthogonal" renderorder="right-up" width="19" height="21" tilewidth="16" tileheight="16" nextobjectid="38">
  <tileset firstgid="1" name="PacMapTileset" tilewidth="16" tileheight="16">
-  <image source="pacman-tileset.png" width="768" height="768"/>
+  <image source="pacman-tileset.png" width="768" height="128"/>
   <terraintypes>
    <terrain name="Blue" tile="49"/>
   </terraintypes>
