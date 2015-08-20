@@ -253,17 +253,22 @@ public class Game extends ApplicationAdapter implements InputProcessor {
 
     @Override
     public boolean keyDown(int keycode) {
+	    //TODO: ADD MOVEMENT KEYS
         switch (keycode) {
             case Input.Keys.W:
+            case Input.Keys.UP:
                 pacman.setDirection(Pacman.Direction.UP);
                 break;
             case Input.Keys.S:
+            case Input.Keys.DOWN:
                 pacman.setDirection(Pacman.Direction.DOWN);
                 break;
             case Input.Keys.A:
+            case Input.Keys.LEFT:
                 pacman.setDirection(Pacman.Direction.LEFT);
                 break;
             case Input.Keys.D:
+            case Input.Keys.RIGHT:
                 pacman.setDirection(Pacman.Direction.RIGHT);
                 break;
             case Input.Keys.ESCAPE:
