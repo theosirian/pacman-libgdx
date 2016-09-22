@@ -1,9 +1,13 @@
-package com.theosirian.pacman;
+package com.theosirian.pacman.pacdot;
 
-public class Pacdot extends Entity{
+import com.theosirian.pacman.entity.Entity;
+import com.theosirian.pacman.entity.Pacman;
+
+public class Pacdot extends Entity {
 
     protected Pacman pacman;
-    protected boolean destroy;
+
+	protected boolean destroy;
 
     protected int worth;
 
@@ -28,5 +32,9 @@ public class Pacdot extends Entity{
     public void setPacman(Pacman pacman) {
         this.pacman = pacman;
     }
+
+	public boolean isDestroy() {
+		return destroy;
+	}
 
 }

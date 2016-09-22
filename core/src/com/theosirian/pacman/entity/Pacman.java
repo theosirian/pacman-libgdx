@@ -1,4 +1,4 @@
-package com.theosirian.pacman;
+package com.theosirian.pacman.entity;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.Texture;

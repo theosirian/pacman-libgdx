@@ -1,79 +1,15 @@
-package com.theosirian.pacman;
+package com.theosirian.pacman.entity;
 
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
+import com.theosirian.pacman.util.Settings;
 
 import java.util.Objects;
 
 public class Entity {
-
-	public enum Direction {
-		NONE, UP, DOWN, LEFT, RIGHT;
-
-		private Direction opposite;
-
-		static {
-			NONE.opposite = NONE;
-			UP.opposite = DOWN;
-			DOWN.opposite = UP;
-			RIGHT.opposite = LEFT;
-			LEFT.opposite = RIGHT;
-		}
-
-		public Direction getOppositeDirection() {
-			return opposite;
-		}
-
-		public Vector2 getUnitVector(){
-			switch (this) {
-				case UP:
-					return new Vector2(0, 1);
-				case DOWN:
-					return new Vector2(0, -1);
-				case RIGHT:
-					return new Vector2(1, 0);
-				case LEFT:
-					return new Vector2(-1, 0);
-				default:
-					return new Vector2(0, 0);
-			}
-		}
-
-		public float toRotation(){
-			switch (this) {
-				case UP:
-					return 90;
-				case DOWN:
-					return 270;
-				case RIGHT:
-					return 0;
-				case LEFT:
-					return 180;
-				default:
-					return 0;
-			}
-		}
-
-		static Direction parseString(String str){
-			str = str.trim().toUpperCase();
-			switch (str) {
-				case "UP":
-					return Direction.UP;
-				case "DOWN":
-					return Direction.DOWN;
-				case "RIGHT":
-					return Direction.RIGHT;
-				case "LEFT":
-					return Direction.LEFT;
-				case "NONE":
-				default:
-					return Direction.NONE;
-			}
-		}
-	}
 
 	protected TextureRegion currentFrame;
 	protected TiledMapTileLayer collisionLayer;
@@ -81,7 +17,6 @@ public class Entity {
 	protected float rotation;
 	protected Direction direction;
 	protected Rectangle bounds;
-
 	public Entity(int x, int y, TiledMapTileLayer collisionLayer) {
 		position = new Vector2(x, y);
 		size = new Vector2(Settings.SPRITE_WIDTH, Settings.SPRITE_HEIGHT);
@@ -225,6 +160,71 @@ public class Entity {
 			bounds.setHeight(height);
 		} else {
 			bounds = new Rectangle(x, y, width, height);
+		}
+	}
+
+	public enum Direction {
+		NONE, UP, DOWN, LEFT, RIGHT;
+
+		static {
+			NONE.opposite = NONE;
+			UP.opposite = DOWN;
+			DOWN.opposite = UP;
+			RIGHT.opposite = LEFT;
+			LEFT.opposite = RIGHT;
+		}
+
+		private Direction opposite;
+
+		public static Direction parseString(String str) {
+			str = str.trim().toUpperCase();
+			switch (str) {
+				case "UP":
+					return Direction.UP;
+				case "DOWN":
+					return Direction.DOWN;
+				case "RIGHT":
+					return Direction.RIGHT;
+				case "LEFT":
+					return Direction.LEFT;
+				case "NONE":
+				default:
+					return Direction.NONE;
+			}
+		}
+
+		public Direction getOppositeDirection() {
+			return opposite;
+		}
+
+		public Vector2 getUnitVector() {
+			switch (this) {
+				case UP:
+					return new Vector2(0, 1);
+				case DOWN:
+					return new Vector2(0, -1);
+				case RIGHT:
+					return new Vector2(1, 0);
+				case LEFT:
+					return new Vector2(-1, 0);
+				default:
+					return new Vector2(0, 0);
+			}
+		}
+
+		public float toRotation() {
+			switch (this) {
+				case UP:
+					return 90;
+				case DOWN:
+					return 270;
+				case RIGHT:
+					return 0;
+				case LEFT:
+					return 180;
+				default:
+					return 0;
+			}
 		}
 	}
 }

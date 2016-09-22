@@ -1,8 +1,9 @@
-package com.theosirian.pacman;
+package com.theosirian.pacman.pacdot;
 
 import com.badlogic.gdx.graphics.Texture;
-import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.theosirian.pacman.entity.Pacman;
+import com.theosirian.pacman.util.Settings;
 
 public class BonusPacdot extends Pacdot {
 

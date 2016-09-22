@@ -1,6 +1,7 @@
-package com.theosirian.pacman;
+package com.theosirian.pacman.entity;
 
 import com.badlogic.gdx.math.Vector2;
+import com.theosirian.pacman.util.Settings;
 
 public class Teleport extends Entity {
 
