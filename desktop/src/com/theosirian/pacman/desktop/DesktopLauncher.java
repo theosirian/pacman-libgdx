@@ -10,8 +10,8 @@ public class DesktopLauncher {
         LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
         config.title = "Pacman";
         config.addIcon("pacman-icon.png", Files.FileType.Internal);
-        config.width = 19 * 16;
-        config.height = 21 * 16;
+        config.width = 19 * 48;
+        config.height = 21 * 48;
         new LwjglApplication(new Game(), config);
     }
 }

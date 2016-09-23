@@ -11,7 +11,7 @@ allprojects {
     apply plugin: "eclipse"
     apply plugin: "idea"
 
-    version = '0.2'
+    version = '0.4a'
     ext {
         appName = 'Pacman'
         gdxVersion = '1.6.4'

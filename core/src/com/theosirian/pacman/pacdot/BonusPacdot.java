@@ -19,6 +19,7 @@ public class BonusPacdot extends Pacdot {
 		worth = Math.min(accumalativeBonus >= 1000 ? 500 + accumalativeBonus : 200 + accumalativeBonus, 5000);
 		accumalativeBonus = worth;
 		currentFrame = new TextureRegion(sprite, textureIndex * Settings.SPRITE_WIDTH, 0, Settings.SPRITE_WIDTH, Settings.SPRITE_HEIGHT);
+		targetedFrame = new TextureRegion(sprite, textureIndex * Settings.SPRITE_WIDTH, 16, Settings.SPRITE_WIDTH, Settings.SPRITE_HEIGHT);
 		textureIndex = (textureIndex + 1) % (sprite.getWidth() / 16);
 		timer = 0;
 	}
@@ -27,7 +28,7 @@ public class BonusPacdot extends Pacdot {
 	public void update(float delta) {
 		setBounds(getX() + 4, getY() + 4, 8, 8);
 		timer += delta;
-		if (timer > 10f){
+		if (timer > 10f) {
 			accumalativeBonus = 0;
 			this.destroy = true;
 		} else {

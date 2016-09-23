@@ -3,6 +3,7 @@ package com.theosirian.pacman.entity;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
+import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Rectangle;
 import com.badlogic.gdx.math.Vector2;
 import com.theosirian.pacman.util.Settings;
@@ -17,6 +18,7 @@ public class Entity {
 	protected float rotation;
 	protected Direction direction;
 	protected Rectangle bounds;
+
 	public Entity(int x, int y, TiledMapTileLayer collisionLayer) {
 		position = new Vector2(x, y);
 		size = new Vector2(Settings.SPRITE_WIDTH, Settings.SPRITE_HEIGHT);
@@ -27,7 +29,7 @@ public class Entity {
 		this.collisionLayer = collisionLayer;
 	}
 
-	public void update(float delta){
+	public void update(float delta) {
 		setBounds(getX(), getY(), Settings.SPRITE_WIDTH, Settings.SPRITE_HEIGHT);
 	}
 
@@ -56,7 +58,7 @@ public class Entity {
 		return false;
 	}
 
-	public TiledMapTileLayer getCollisionLayer(){
+	public TiledMapTileLayer getCollisionLayer() {
 		return this.collisionLayer;
 	}
 
@@ -175,6 +177,10 @@ public class Entity {
 		}
 
 		private Direction opposite;
+
+		public static Direction getRandom() {
+			return Direction.values()[MathUtils.random(3) + 1];
+		}
 
 		public static Direction parseString(String str) {
 			str = str.trim().toUpperCase();
