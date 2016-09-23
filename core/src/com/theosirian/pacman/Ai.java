@@ -14,11 +14,15 @@ import static com.theosirian.pacman.entity.Entity.Direction.*;
  */
 public class Ai {
 	public static Pacdot decidePacdot(Pacman pacman, List<Pacdot> pacdots) {
+		Optional<Pacdot> testFruit = pacdots.stream().filter(a -> a instanceof BonusPacdot).findFirst();
+		if (testFruit.isPresent()) {
+			return testFruit.get();
+		}
 		Optional<Pacdot> nearestOpt = pacdots.stream().min((a, b) -> {
 			if (a.isDestroy()) return Integer.MIN_VALUE;
 			else if (b.isDestroy()) return Integer.MAX_VALUE;
-			else if (a instanceof BonusPacdot) return Integer.MAX_VALUE;
-			else if (b instanceof BonusPacdot) return Integer.MIN_VALUE;
+			else if (a.getClass().isInstance(BonusPacdot.class)) return Integer.MAX_VALUE;
+			else if (b.getClass().isInstance(BonusPacdot.class)) return Integer.MIN_VALUE;
 			return heuristic_sort(pacman, a.getX(), a.getY(), b.getX(), b.getY());
 		});
 		if (nearestOpt.isPresent())

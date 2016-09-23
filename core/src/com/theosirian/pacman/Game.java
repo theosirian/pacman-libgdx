@@ -124,7 +124,7 @@ public class Game extends ApplicationAdapter implements InputProcessor {
 							aiPacdotTarget = Ai.decidePacdot(pacman, pacdots);
 						Ai.pathfind(pacmanGraph, pacman, stepQueue, teleportHashes, aiPacdotTarget);
 						aiTargetPosition.set(pacman.getX(), pacman.getY());
-						System.out.println("Pathfinding! " + stepQueue.size() + " new steps.");
+//						System.out.println("Pathfinding! " + stepQueue.size() + " new steps.");
 						pacman.setDirection(NONE);
 					} else {
 						Entity.Direction dir = stepQueue.poll();
